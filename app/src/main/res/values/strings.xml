@@ -1,3 +1,127 @@
 <resources>
-    <string name="app_name">Thirty Days</string>
+
+    <string name="app_name">30 Dias de Compose</string>
+    <string name="day">Dia</string>
+
+    <!-- Dia 1 -->
+    <string name="dia1_titulo">Olá, Mundo! O seu primeiro Composable</string>
+    <string name="dia1_descricao">Vamos começar com o básico. Hoje você vai aprender o que é uma função @Composable, como criar seu primeiro componente de UI com a função Text e como visualizá-lo usando o @Preview.</string>
+
+    <!-- Dia 2 -->
+    <string name="dia2_titulo">Layouts Básicos - Column, Row e Box</string>
+    <string name="dia2_descricao">Organizar componentes é fundamental. Aprenda a usar Column para empilhar itens verticalmente, Row para alinhá-los horizontalmente e Box para sobrepô-los, como camadas.</string>
+
+    <!-- Dia 3 -->
+    <string name="dia3_titulo">Modifiers - O Superpoder do Compose</string>
+    <string name="dia3_descricao">Modifiers são a forma de decorar e modificar qualquer Composable. Hoje vamos explorar como adicionar padding, tamanho, cores de fundo e cliques usando a cadeia de Modifiers.</string>
+
+    <!-- Dia 4 -->
+    <string name="dia4_titulo">Gerenciando Estado com `remember` e `mutableStateOf`</string>
+    <string name="dia4_descricao">UI dinâmica precisa de estado. Entenda como `mutableStateOf` armazena um valor que pode mudar e como `remember` garante que esse estado sobreviva às recomposições da UI.</string>
+
+    <!-- Dia 5 -->
+    <string name="dia5_titulo">State Hoisting - Organizando seu Estado</string>
+    <string name="dia5_descricao">Aprenda a "elevar o estado" (state hoisting), um padrão essencial para criar componentes reutilizáveis e sem estado (stateless), tornando sua UI mais fácil de testar e gerenciar.</string>
+
+    <!-- Dia 6 -->
+    <string name="dia6_titulo">Criando uma Lista com `LazyColumn`</string>
+    <string name="dia6_descricao">Para listas longas, eficiência é tudo. Descubra como `LazyColumn` e `LazyRow` renderizam apenas os itens visíveis na tela, garantindo uma performance suave para qualquer quantidade de dados.</string>
+
+    <!-- Dia 7 -->
+    <string name="dia7_titulo">Imagens e Ícones</string>
+    <string name="dia7_descricao">Uma imagem vale mais que mil palavras. Aprenda a usar o Composable `Image` para exibir drawables e o `Icon` para ícones do Material Design, personalizando sua aparência.</string>
+
+    <!-- Dia 8 -->
+    <string name="dia8_titulo">Entradas de Texto com `TextField`</string>
+    <string name="dia8_descricao">Vamos interagir! Explore o `TextField` e o `OutlinedTextField` para capturar entradas do usuário, controlando o valor, o rótulo (label) e a aparência do campo de texto.</string>
+
+    <!-- Dia 9 -->
+    <string name="dia9_titulo">Botões, Checkboxes e outros Controles</string>
+    <string name="dia9_descricao">Aprofunde-se nos componentes interativos. Hoje o foco é em `Button`, `Checkbox`, `RadioButton` e `Switch` para permitir que o usuário faça escolhas e dispare ações.</string>
+
+    <!-- Dia 10 -->
+    <string name="dia10_titulo">Tematização com MaterialTheme</string>
+    <string name="dia10_descricao">Consistência visual é chave. Aprenda como `MaterialTheme` centraliza cores (`ColorScheme`), tipografia (`Typography`) e formas (`Shapes`) para criar um design coeso em todo o aplicativo.</string>
+
+    <!-- Dia 11 -->
+    <string name="dia11_titulo">Navegação Simples com o NavController</string>
+    <string name="dia11_descricao">Apps têm múltiplas telas. Configure o `NavController` e o `NavHost` para definir um grafo de navegação e permitir a transição entre diferentes Composables de forma estruturada.</string>
+
+    <!-- Dia 12 -->
+    <string name="dia12_titulo">Animações Básicas com `animate*AsState`</string>
+    <string name="dia12_descricao">Dê vida à sua UI! Aprenda a animar propriedades como cor, tamanho ou posição suavemente entre dois estados usando as APIs `animate*AsState`, como `animateColorAsState`.</string>
+
+    <!-- Dia 13 -->
+    <string name="dia13_titulo">`Scaffold` - A Estrutura de Tela do Material</string>
+    <string name="dia13_descricao">Construa telas complexas facilmente. O `Scaffold` oferece slots pré-definidos para `TopAppBar`, `BottomAppBar`, `FloatingActionButton` e o conteúdo principal da sua tela.</string>
+
+    <!-- Dia 14 -->
+    <string name="dia14_titulo">Recomposição - O Coração do Compose</string>
+    <string name="dia14_descricao">Entenda o que acontece "por baixo dos panos". Aprenda o que é a recomposição, por que ela acontece e como escrever Composables eficientes que evitam recriações desnecessárias.</string>
+
+    <!-- Dia 15 -->
+    <string name="dia15_titulo">ViewModel e o Fluxo de Dados Unidirecional</string>
+    <string name="dia15_descricao">Separe a lógica da UI. Integre um `ViewModel` para gerenciar o estado da tela e os eventos, seguindo o padrão de Fluxo de Dados Unidirecional (UDF) recomendado pelo Android.</string>
+
+    <!-- Dia 16 -->
+    <string name="dia16_titulo">Efeitos Colaterais com `LaunchedEffect`</string>
+    <string name="dia16_descricao">Como chamar uma função de suspensão (suspend) de dentro de um Composable? O `LaunchedEffect` é a resposta. Use-o para operações assíncronas que devem ser executadas apenas uma vez.</string>
+
+    <!-- Dia 17 -->
+    <string name="dia17_titulo">Layouts Avançados - `ConstraintLayout`</string>
+    <string name="dia17_descricao">Para UIs complexas, `ConstraintLayout` em Compose permite criar layouts planos e eficientes, definindo relações (constraints) entre os componentes de forma declarativa.</string>
+
+    <!-- Dia 18 -->
+    <string name="dia18_titulo">Trabalhando com Gestos e `pointerInput`</string>
+    <string name="dia18_descricao">Vá além do clique. O modifier `pointerInput` permite detectar gestos complexos como arrastar (drag), tocar e segurar (long press) e aplicar zoom com os dedos (pinch-to-zoom).</string>
+
+    <!-- Dia 19 -->
+    <string name="dia19_titulo">Animações de Transição com `AnimatedVisibility`</string>
+    <string name="dia19_descricao">Faça componentes aparecerem e desaparecerem com estilo. `AnimatedVisibility` facilita a criação de animações de entrada (fade in, slide in) e saída (fade out, slide out).</string>
+
+    <!-- Dia 20 -->
+    <string name="dia20_titulo">`rememberSavable` para Sobreviver à Morte do Processo</string>
+    <string name="dia20_descricao">O que acontece com seu estado quando o Android fecha seu app? Use `rememberSavable` em vez de `remember` para garantir que o estado da UI seja restaurado automaticamente.</string>
+
+    <!-- Dia 21 -->
+    <string name="dia21_titulo">Interoperabilidade - Usando Views XML em Compose</string>
+    <string name="dia21_descricao">Migração gradual é possível. Aprenda a usar o `AndroidView` para incorporar componentes do sistema de Views tradicional (como um `MapView`) dentro da sua UI em Compose.</string>
+
+    <!-- Dia 22 -->
+    <string name="dia22_titulo">Interoperabilidade - Usando Compose em XML</string>
+    <string name="dia22_descricao">O caminho inverso também funciona. Veja como usar a `ComposeView` em seus layouts XML para começar a introduzir Jetpack Compose em um projeto Android já existente.</string>
+
+    <!-- Dia 23 -->
+    <string name="dia23_titulo">Efeitos Colaterais - `rememberCoroutineScope`</string>
+    <string name="dia23_descricao">Precisa iniciar uma coroutine em resposta a um evento de UI, como um clique? Use `rememberCoroutineScope` para obter um escopo que segue o ciclo de vida do Composable.</string>
+
+    <!-- Dia 24 -->
+    <string name="dia24_titulo">Testando seus Composables</string>
+    <string name="dia24_descricao">Uma UI testável é uma UI robusta. Aprenda a usar a `createComposeRule` para renderizar seus Composables em testes, encontrar nós na árvore de UI e verificar suas propriedades.</string>
+
+    <!-- Dia 25 -->
+    <string name="dia25_titulo">`Canvas` - Desenhando Formas Customizadas</string>
+    <string name="dia25_descricao">Liberdade criativa total. O Composable `Canvas` te dá um espaço para desenhar o que quiser, desde linhas e círculos a formas complexas e caminhos (paths) personalizados.</string>
+
+    <!-- Dia 26 -->
+    <string name="dia26_titulo">`CompositionLocalProvider` para Dados Implícitos</string>
+    <string name="dia26_descricao">Como passar dados para baixo na árvore de Composables sem perfurar parâmetros? `CompositionLocalProvider` é ideal para "prover" valores, como o modo escuro, para toda uma sub-árvore.</string>
+
+    <!-- Dia 27 -->
+    <string name="dia27_titulo">Animações Complexas com `Transition`</string>
+    <string name="dia27_descricao">Para animar múltiplos valores ao mesmo tempo com base em um estado, a API `updateTransition` oferece um controle poderoso para criar animações coreografadas e complexas.</string>
+
+    <!-- Dia 28 -->
+    <string name="dia28_titulo">`SubcomposeLayout` - Layouts em Duas Passadas</string>
+    <string name="dia28_descricao">Explore um dos blocos de construção mais poderosos do Compose. `SubcomposeLayout` permite medir um componente "filho" antes de decidir o layout final, útil para UIs como um `Scaffold`.</string>
+
+    <!-- Dia 29 -->
+    <string name="dia29_titulo">Otimizando a Performance do seu App</string>
+    <string name="dia29_descricao">Dicas e truques para garantir que seu app rode liso. Aprenda a usar a anotação `@Stable`, evitar alocações desnecessárias e usar lambdas estáticas para minimizar recomposições.</string>
+
+    <!-- Dia 30 -->
+    <string name="dia30_titulo">Publicando seu App Compose na Play Store</string>
+    <string name="dia30_descricao">Parabéns! Você chegou ao fim. Hoje o foco é revisar os passos finais: gerar um App Bundle assinado em modo release, configurar o ProGuard e preparar sua obra-prima para o mundo.</string>
+
+
 </resources>
