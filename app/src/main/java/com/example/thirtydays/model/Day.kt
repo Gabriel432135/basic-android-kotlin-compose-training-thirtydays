@@ -2,9 +2,11 @@ package com.example.thirtydays.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.Stable
 import com.example.thirtydays.R
 
-data class Day private constructor(@StringRes val dayTitle: Int, @StringRes val dayDescription: Int, val dayNumber: Int, @DrawableRes val dayImage: Int){
+@Immutable data class Day private constructor(@StringRes val dayTitle: Int, @StringRes val dayDescription: Int, val dayNumber: Int, @DrawableRes val dayImage: Int){
     companion object{
         private var countDay: Int = 0
         fun create(@StringRes dayTitle: Int, @StringRes dayDescription: Int, @DrawableRes dayImage: Int): Day{
@@ -14,6 +16,8 @@ data class Day private constructor(@StringRes val dayTitle: Int, @StringRes val 
     }
 }
 
+
+@Stable
 val days = listOf(
     Day.create(dayTitle = R.string.dia1_titulo, dayDescription = R.string.dia1_descricao, dayImage = R.drawable.typing_on_a_pc),
     Day.create(dayTitle = R.string.dia2_titulo, dayDescription = R.string.dia2_descricao, dayImage = R.drawable.typing_on_a_pc),
